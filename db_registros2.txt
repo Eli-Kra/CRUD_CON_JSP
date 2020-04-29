@@ -1,0 +1,14 @@
+create database registros2; 
+use registros2;
+create table alumnos (
+codigo int not null,
+nombres varchar (50) not null,
+apellidos varchar(50) not null,
+semestre varchar(20) not null,
+primary key (codigo))Engine=InnoDB;
+
+
+insert into alumnos (codigo, nombres, apellidos, semestre) values
+(1, "Laurita", "Gomez", "Primero");
+
+select * from alumnos;
